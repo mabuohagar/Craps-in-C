@@ -6,8 +6,6 @@
 #include <time.h>
 #include "functions.h"
 
-
-
 int main(void)
 {
 	int userBet, winOrLose, moneyInWallet;
@@ -19,9 +17,12 @@ int main(void)
 	while (keepPlaying)
 	{
 		printf("WELCOME!\nTHE RULES :\n");
-		printf("if you roll 7 or 11 you win\nif you roll 2,3 or 12 you lose\n");
-		printf("if you roll any other # you roll for point which means\n");
-		printf("if you roll the same  # you win but if you roll 7 you lose\n");
+		printf("If the come-out roll is 7 or 11, the bet wins.\n");
+		printf("If the come-out roll is 2, 3 or 12, the bet loses.\n");
+		printf("If the roll is any other value, it establishes a point.\n");
+		printf("If, with a point established, that point is rolled again before a 7, the bet wins.\n");
+		printf("If, with a point established, a 7 is rolled before the point is rolled again, the bet loses.\n");
+
 		printf("GOOD LUCK!!\n\n");
 
 
